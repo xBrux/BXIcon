@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BXIconDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a BXIconView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1Q-px-0g2">
+                                <rect key="frame" x="221" y="28" width="157.5" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a Image View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGg-a0-4DO">
+                                <rect key="frame" x="222" y="216" width="155.5" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Icon Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wj4-Sa-7QX">
+                                <rect key="frame" x="259" y="483" width="82" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Bt-iq-Nx0">
+                                <rect key="frame" x="250" y="245" width="100" height="100"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Fot-tA-AJa"/>
+                                    <constraint firstAttribute="width" constant="100" id="bN8-TL-afX"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="star" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eNO-Aq-G1z">
+                                <rect key="frame" x="215" y="512" width="171" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="171" id="OST-0y-HGo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYQ-Y8-gwq">
+                                <rect key="frame" x="281" y="550" width="38" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Show"/>
+                                <connections>
+                                    <action selector="showButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tZd-cD-oVA"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x4X-7X-ls3" customClass="BXIconView" customModule="BXIconDemo" customModuleProvider="target">
+                                <rect key="frame" x="250" y="56" width="100" height="100"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="S0Y-vu-hCg"/>
+                                    <constraint firstAttribute="height" constant="100" id="W4G-Ra-ahc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="iconName" value="bowl"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wj4-Sa-7QX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="07y-02-vz3"/>
+                            <constraint firstItem="0Bt-iq-Nx0" firstAttribute="top" secondItem="EGg-a0-4DO" secondAttribute="bottom" constant="8" id="2jA-sc-n0o"/>
+                            <constraint firstItem="J1Q-px-0g2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="4jb-vH-t6A"/>
+                            <constraint firstItem="EGg-a0-4DO" firstAttribute="top" secondItem="x4X-7X-ls3" secondAttribute="bottom" constant="60" id="Cax-1b-O2z"/>
+                            <constraint firstItem="0Bt-iq-Nx0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DoE-ZC-ywZ"/>
+                            <constraint firstItem="eNO-Aq-G1z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EhB-3C-lPV"/>
+                            <constraint firstItem="x4X-7X-ls3" firstAttribute="top" secondItem="J1Q-px-0g2" secondAttribute="bottom" constant="8" id="OrA-Ys-ni1"/>
+                            <constraint firstItem="EGg-a0-4DO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UIS-b4-3S5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wYQ-Y8-gwq" secondAttribute="bottom" constant="20" id="Ys8-i2-DBo"/>
+                            <constraint firstItem="x4X-7X-ls3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hyF-Iu-O2H"/>
+                            <constraint firstItem="eNO-Aq-G1z" firstAttribute="top" secondItem="wj4-Sa-7QX" secondAttribute="bottom" constant="8" id="iOV-yP-fm2"/>
+                            <constraint firstItem="wYQ-Y8-gwq" firstAttribute="top" secondItem="eNO-Aq-G1z" secondAttribute="bottom" constant="8" id="qFf-4N-BM9"/>
+                            <constraint firstItem="J1Q-px-0g2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rZW-Su-mY2"/>
+                            <constraint firstItem="wYQ-Y8-gwq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zdi-Ol-iOK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="iconView" destination="x4X-7X-ls3" id="PKu-A9-2HS"/>
+                        <outlet property="imageView" destination="0Bt-iq-Nx0" id="TgV-Jz-6Cd"/>
+                        <outlet property="textField" destination="eNO-Aq-G1z" id="naw-P9-1ti"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920" y="655"/>
+        </scene>
+    </scenes>
+</document>
