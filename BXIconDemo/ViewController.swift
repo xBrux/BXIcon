@@ -18,11 +18,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         let image = BXIcon().iconImage(iconName:"bowl", imageSize: CGSize(width: 100, height: 100), fillColor: UIColor.redColor())
         imageView.image = image
-//        for i in 0...100000 {
-//            BXIcon().iconImage("bowl", imageSize: CGSize(width: 100, height: 100), fillColor: UIColor.redColor())
-//        }
-        
-//        let b = BXIcon().image()!
     }
 
     override func didReceiveMemoryWarning() {
